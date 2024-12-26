@@ -25,8 +25,8 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t esbe1546/react-app:latest .
-          docker push esbe1546/react-app:latest
+          docker build . -t esbe1546/my_react_ts-app:latest
+          docker push esbe1546/my-react_ts-app:latest
 
       - name: Deploy Docker Container
         run: |
