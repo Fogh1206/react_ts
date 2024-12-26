@@ -25,12 +25,12 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t your-dockerhub-username/react-app:latest .
-          docker push your-dockerhub-username/react-app:latest
+          docker build -t esbe1546/react-app:latest .
+          docker push esbe1546/react-app:latest
 
       - name: Deploy Docker Container
         run: |
-          docker pull your-dockerhub-username/react-app:latest
+          docker pull esbe1546/react-app:latest
           docker stop react-app || true
           docker rm react-app || true
-          docker run -d --name react-app -p 3000:3000 your-dockerhub-username/react-app:latest
+          docker run -d --name react-app -p 3000:3000 esbe1546/react-app:latest
