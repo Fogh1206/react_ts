@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy Docker Container
         run: |
-          docker pull esbe1546/react-app:latest
-          docker stop react-app || true
-          docker rm react-app || true
-          docker run -d --name react-app -p 3000:3000 esbe1546/react-app:latest
+          docker pull esbe1546/my-react_ts-app:latest
+          docker stop my-react_ts-app:latest || true
+          docker rm my-react_ts-app:latest || true
+          docker run -d --name my-react_ts-app:latest -p 3000:3000 esbe1546/react-app:latest
